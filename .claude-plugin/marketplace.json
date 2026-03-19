@@ -1,0 +1,32 @@
+{
+  "name": "awrshift-telegram",
+  "owner": {
+    "name": "Serhii Kravchenko",
+    "email": "awrshift@proton.me"
+  },
+  "metadata": {
+    "description": "The only Telegram skill your AI agent needs. Read messages, parse channels, download voice notes via user API.",
+    "version": "1.0.0",
+    "homepage": "https://github.com/awrshift/skill-telegram"
+  },
+  "plugins": [
+    {
+      "name": "telegram",
+      "description": "Read messages, parse channels, download voice notes from Telegram via Telethon user API. Use when user says 'read telegram', 'check saved messages', 'fetch from telegram', 'parse channel', 'transcribe voice', 'telegram search', 'download voice notes', or when any agent needs Telegram data.",
+      "source": "./",
+      "strict": false,
+      "version": "1.0.0",
+      "category": "communication",
+      "keywords": [
+        "telegram",
+        "messaging",
+        "voice-notes",
+        "channel-parser",
+        "telethon"
+      ],
+      "skills": [
+        "./skills/telegram"
+      ]
+    }
+  ]
+}
