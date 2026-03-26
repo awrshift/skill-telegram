@@ -46,7 +46,7 @@ One session file. All your chats. JSON output that pipes into anything.
 ```bash
 # Copy skill to your project
 git clone https://github.com/awrshift/skill-telegram.git
-cp -r skill-telegram/skills/telegram .claude/skills/telegram
+cp -r skill-telegram .claude/skills/telegram
 ```
 
 ## Setup (5 minutes)
@@ -75,7 +75,7 @@ pip install telethon
 ### Step 4: Authenticate
 
 ```bash
-source .env && python3 .claude/skills/telegram/scripts/tg_setup.py --auth
+source .env && python3 .claude/./scripts/tg_setup.py --auth
 ```
 
 Enter your phone number → receive code in Telegram → enter code. Done. Session file created automatically.
@@ -83,7 +83,7 @@ Enter your phone number → receive code in Telegram → enter code. Done. Sessi
 ### Step 5: Verify
 
 ```bash
-source .env && python3 .claude/skills/telegram/scripts/tg_setup.py
+source .env && python3 .claude/./scripts/tg_setup.py
 ```
 
 All checks should show `[ OK ]`.
@@ -153,8 +153,8 @@ The skill finds your session file automatically:
 | Platform | Install |
 |----------|---------|
 | Claude Code | `/plugin marketplace add awrshift/skill-telegram` |
-| Codex CLI | Copy `skills/telegram/` to `.openai/skills/` |
-| Gemini CLI | Copy `skills/telegram/` to `.gemini/skills/` |
+| Codex CLI | Copy `./` to `.openai/skills/` |
+| Gemini CLI | Copy `./` to `.gemini/skills/` |
 | Any Agent Skills tool | Follow [spec](https://agentskills.io) |
 
 ## Part of the AWRSHIFT Ecosystem
